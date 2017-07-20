@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+
+    <!-- Show when creating and altering an existing event -->
+    <string-array name="category_array">
+        <item>Homework</item>
+        <item>Project</item>
+        <item>Personal</item>
+        <item>Portfolio</item>
+    </string-array>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/all"
+        android:orderInCategory="1"
+        android:title="All" />
+    <item
+        android:id="@+id/homework"
+        android:orderInCategory="2"
+        android:title="Homework" />
+    <item
+        android:id="@+id/project"
+        android:orderInCategory="3"
+        android:title="Project" />
+    <item
+        android:id="@+id/personal"
+        android:orderInCategory="4"
+        android:title="Personal" />
+    <item
+        android:id="@+id/portfolio"
+        android:orderInCategory="5"
+        android:title="Portfolio" />
+</menu>
