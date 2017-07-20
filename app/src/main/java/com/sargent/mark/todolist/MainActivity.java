@@ -181,12 +181,8 @@ public class MainActivity extends AppCompatActivity implements AddToDoFragment.O
         return true;
     }
 
-    /*
-    * ADDED NEW function to override the onOptionsItemSelected to handle when a menu item
-    * is clicked. Depending on which is clicked we display the correct category.
-    * */
-
     //Overrides onOptionsItemSelected to populate database
+    // getSpecificItems returns only requested events
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
@@ -196,19 +192,19 @@ public class MainActivity extends AppCompatActivity implements AddToDoFragment.O
             adapter.swapCursor(cursor);
         }
         else if(itemId == R.id.homework){
-            cursor = getSpecificItems(db, "Home");
+            cursor = getSpecificItems(db, "Homework");
             adapter.swapCursor(cursor);
         }
         else if(itemId == R.id.project){
-            cursor = getSpecificItems(db, "Work");
+            cursor = getSpecificItems(db, "Project");
             adapter.swapCursor(cursor);
         }
         else if(itemId == R.id.personal){
-            cursor = getSpecificItems(db, "School");
+            cursor = getSpecificItems(db, "Personal");
             adapter.swapCursor(cursor);
         }
         else if(itemId == R.id.portfolio){
-            cursor = getSpecificItems(db, "Extra");
+            cursor = getSpecificItems(db, "Portfolio");
             adapter.swapCursor(cursor);
         }
 
